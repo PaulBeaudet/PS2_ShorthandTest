@@ -28,7 +28,7 @@ const byte special[2][SPECIALCASES] PROGMEM =
  //0,1, 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10,
 };
 
-byte convertion(byte letter)
+byte conversion(byte letter)
 {
   static boolean qwerty = false;//default to dvorak, change to true for qwerty
   if(letter == 192) //toggle layout via insert key
@@ -68,4 +68,26 @@ void controlChars(byte input)
     Keyboard.press(117);//u
     Keyboard.releaseAll();
   }
+}
+
+//hardwired button conversions
+byte customKeys[] = { 32, 32,  8,  8};
+
+byte buttonSignal(int chord)
+{
+  for(byte i = 0; i < 4; i++)
+  {
+    if(chord == 1 << i)
+    {
+      Serial.println(customKeys[i]);
+      return customKeys[i];
+    }
+  }
+  return 0;
+}
+
+byte printableSignal(byte input)
+{
+  if(input == 32 || input == 8 || input || 9){return input;}
+  else{return 0;}
 }

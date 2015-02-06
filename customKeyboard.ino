@@ -7,9 +7,11 @@
 #include <avr/pgmspace.h>//explicitly stated read only memory
 
 #define IMPLICIT_SPACE 153 //right option key
+#define MONITOR_BUTTONS 33 //signal to monitor buttons
 
 void setup()
 {
+  buttonUp();
   Serial1.begin(115200); //E1115B baud rate when "DR" pin is open
                         //Rate is 56k when connected to ground
   Serial.begin(115200);
@@ -24,24 +26,39 @@ void loop()
 void inOut()
 {
   static byte lastOutput = 0;
-
+  
   if(Serial1.available())
   {
     byte input = Serial1.read();
-    byte output = convertion(input);
-    if(output)
-    { //release before write only after a TAB for alt-tab
-      if(output != 9 && lastOutput == 9){Keyboard.releaseAll();}
-      Keyboard.write(output); //write char
-      if(output != 9 && lastOutput != 9){Keyboard.releaseAll();}
-      headsUpSuggest(output, placeHolder(output));
-      lastOutput = output;  //release after for ctrl options
-    }
-    else
-    {
-      controlChars(input); //account for control conditions
-      if(input == IMPLICIT_SPACE){headsUpSuggest(input, placeHolder(input));}
-    }
+    outputHandlr(input, conversion(input));
+  }
+  
+  buttonUpdate(); // check hard-wired buttons
+  int chord = trueChord(0);
+  if(chord)
+  {
+    Serial.println(chord, DEC);
+    byte hardIO = buttonSignal(chord);
+    outputHandlr(hardIO, printableSignal(hardIO));
+  }
+}
+
+void outputHandlr(byte input, byte output)
+{
+  static byte lastOutput = 0;
+  
+  if(output)
+  { //release before write only after a TAB for alt-tab
+    if(output != 9 && lastOutput == 9){Keyboard.releaseAll();}
+    Keyboard.write(output); //write char
+    if(output != 9 && lastOutput != 9){Keyboard.releaseAll();}
+    headsUpSuggest(output, placeHolder(output));
+    lastOutput = output;  //release after for ctrl options
+  }
+  else
+  {
+    controlChars(input); //account for control conditions
+    if(input == IMPLICIT_SPACE){headsUpSuggest(input, placeHolder(input));}
   }
 }
 
