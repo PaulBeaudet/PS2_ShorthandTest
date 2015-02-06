@@ -23,13 +23,13 @@ int buttonState(byte bitNumber)
   else{bitWrite(state, bitNumber-16, 0);}//press state
 }
 
-int trueChord(boolean mode) //returns chord when 
-{  
+int trueChord(boolean mode) //Chord built with "buttonUpdate()" 
+{                           //returns Chord in main loop with trueChord(0)
   static unsigned long chordTime = 0;
   static int chordSize = 0;
   static boolean chordHappening = false;
   
-  if(mode)//TRIGGER activate
+  if(mode)//TRIGGER activate, done in buttonUpdate
   {
     chordSize++;
     if(chordSize == 1) //given this is first "note" in the chord

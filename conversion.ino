@@ -71,23 +71,19 @@ void controlChars(byte input)
 }
 
 //hardwired button conversions
-byte customKeys[] = { 32, 32,  8,  8};
+byte customKeys[] = { 32, IMPLICIT_SPACE,  8,  8};
 
 byte buttonSignal(int chord)
 {
   for(byte i = 0; i < 4; i++)
   {
-    if(chord == 1 << i)
-    {
-      Serial.println(customKeys[i]);
-      return customKeys[i];
-    }
+    if(chord == 1 << i){return customKeys[i];}
   }
   return 0;
 }
 
 byte printableSignal(byte input)
 {
-  if(input == 32 || input == 8 || input || 9){return input;}
+  if(input == 32 || input == 8 || input == 9){return input;}
   else{return 0;}
 }

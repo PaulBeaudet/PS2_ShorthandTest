@@ -32,12 +32,11 @@ void inOut()
     byte input = Serial1.read();
     outputHandlr(input, conversion(input));
   }
-  
+
   buttonUpdate(); // check hard-wired buttons
   int chord = trueChord(0);
   if(chord)
   {
-    Serial.println(chord, DEC);
     byte hardIO = buttonSignal(chord);
     outputHandlr(hardIO, printableSignal(hardIO));
   }
@@ -57,8 +56,12 @@ void outputHandlr(byte input, byte output)
   }
   else
   {
-    controlChars(input); //account for control conditions
-    if(input == IMPLICIT_SPACE){headsUpSuggest(input, placeHolder(input));}
+    if(input == IMPLICIT_SPACE)
+    {
+      byte plc = placeHolder(input);
+      headsUpSuggest(input, plc);
+    }
+    else{controlChars(input);}//account for control conditions
   }
 }
 
@@ -73,6 +76,11 @@ byte placeHolder(byte letter)
     byte lastPlace = place;
     place = 0xff;
     return lastPlace;
+  }
+  else if(letter == 8)
+  {
+    if(place == 0 || place == 0xff){place = 0xff;}
+    else{place--;}
   }
   else{place = 0xff;}
   return place;

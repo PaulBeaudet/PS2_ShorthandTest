@@ -1,7 +1,4 @@
 //dictionary.ino Copyright 2015 Paul Beaudet - See license.txt for details
-
-
-
 //common words to autocorrect based on first letter
 const char str0[] PROGMEM = "the";    const char str1[] PROGMEM = "be";
 const char str2[] PROGMEM = "of";     const char str3[] PROGMEM = "and";
@@ -86,7 +83,7 @@ const char str87[] PROGMEM = "might";
 const char str88[] PROGMEM = "ask";
 const char str89[] PROGMEM = "number";
 const char str90[] PROGMEM = "again";
-const char str91[] PROGMEM = "area";
+const char str91[] PROGMEM = "arduino";
 const char str92[] PROGMEM = "under";
 const char str93[] PROGMEM = "problem";
 const char str94[] PROGMEM = "try";
@@ -222,16 +219,11 @@ const char str223[] PROGMEM = "aquarium";
 const char str224[] PROGMEM = "ivory";
 //end two letter combos
 //begin three letter combos
-const char str225[] PROGMEM = "this";
-const char str226[] PROGMEM = "they";
-const char str227[] PROGMEM = "what";
-const char str228[] PROGMEM = "come";
-const char str229[] PROGMEM = "than";
-const char str230[] PROGMEM = "also";
-const char str231[] PROGMEM = "when";
-const char str232[] PROGMEM = "want";
-const char str233[] PROGMEM = "between";
-const char str234[] PROGMEM = "many";
+const char str225[] PROGMEM = "this";   const char str226[] PROGMEM = "they";
+const char str227[] PROGMEM = "what";   const char str228[] PROGMEM = "come";
+const char str229[] PROGMEM = "than";   const char str230[] PROGMEM = "also";
+const char str231[] PROGMEM = "when";   const char str232[] PROGMEM = "want";
+const char str233[] PROGMEM = "between";const char str234[] PROGMEM = "many";
 const char str235[] PROGMEM = "those";
 const char str236[] PROGMEM = "yeah";
 const char str237[] PROGMEM = "through";
@@ -433,7 +425,7 @@ const char str432[] PROGMEM = "raise";
 const char str433[] PROGMEM = "sale";
 const char str434[] PROGMEM = "light";
 const char str435[] PROGMEM = "claim";
-const char str436[] PROGMEM = "base";
+const char str436[] PROGMEM = "basically";
 const char str437[] PROGMEM = "rule";
 const char str438[] PROGMEM = "similar";
 const char str439[] PROGMEM = "quality";
@@ -1392,146 +1384,20 @@ const char * const wordIndex[] PROGMEM=
   str360,str361,str362,str363,str364,str365,str366,str367,str368,str369,
   str370,str371,str372,str373,str374,str375,str376,str377,str378,str379,
   str380,str381,str382,str383,str384,str385,str386,str387,str388,str389,
-  str390,
-  str391,
-  str392,
-  str393,
-  str394,
-  str395,
-  str396,
-  str397,
-  str398,
-  str399,
-  str400,
-  str401,
-  str402,
-  str403,
-  str404,
-  str405,
-  str406,
-  str407,
-  str408,
-  str409,
-  str410,
-  str411,
-  str412,
-  str413,
-  str414,
-  str415,
-  str416,
-  str417,
-  str418,
-  str419,
-  str420,
-  str421,
-  str422,
-  str423,
-  str424,
-  str425,
-  str426,
-  str427,
-  str428,
-  str429,
-  str430,
-  str431,
-  str432,
-  str433,
-  str434,
-  str435,
-  str436,
-  str437,
-  str438,
-  str439,
-  str440,
-  str441,
-  str442,
-  str443,
-  str444,
-  str445,
-  str446,
-  str447,
-  str448,
-  str449,
-  str450,
-  str451,
-  str452,
-  str453,
-  str454,
-  str455,
-  str456,
-  str457,
-  str458,
-  str459,
-  str460,
-  str461,
-  str462,
-  str463,
-  str464,
-  str465,
-  str466,
-  str467,
-  str468,
-  str469,
-  str470,
-  str471,
-  str472,
-  str473,
-  str474,
-  str475,
-  str476,
-  str477,
-  str478,
-  str479,
-  str480,
-  str481,
-  str482,
-  str483,
-  str484,
-  str485,
-  str486,
-  str487,
-  str488,
-  str489,
-  str490,
-  str491,
-  str492,
-  str493,
-  str494,
-  str495,
-  str496,
-  str497,
-  str498,
-  str499,
-  str500,
-  str501,
-  str502,
-  str503,
-  str504,
-  str505,
-  str506,
-  str507,
-  str508,
-  str509,
-  str510,
-  str511,
-  str512,
-  str513,
-  str514,
-  str515,
-  str516,
-  str517,
-  str518,
-  str519,
-  str520,
-  str521,
-  str522,
-  str523,
-  str524,
-  str525,
-  str526,
-  str527,
-  str528,
-  str529,
+  str390,str391,str392,str393,str394,str395,str396,str397,str398,str399,
+  str400,str401,str402,str403,str404,str405,str406,str407,str408,str409,
+  str410,str411,str412,str413,str414,str415,str416,str417,str418,str419,
+  str420,str421,str422,str423,str424,str425,str426,str427,str428,str429,
+  str430,str431,str432,str433,str434,str435,str436,str437,str438,str439,
+  str440,str441,str442,str443,str444,str445,str446,str447,str448,str449,
+  str450,str451,str452,str453,str454,str455,str456,str457,str458,str459,
+  str460,str461,str462,str463,str464,str465,str466,str467,str468,str469,
+  str470,str471,str472,str473,str474,str475,str476,str477,str478,str479,
+  str480,str481,str482,str483,str484,str485,str486,str487,str488,str489,
+  str490,str491,str492,str493,str494,str495,str496,str497,str498,str499,
+  str500,str501,str502,str503,str504,str505,str506,str507,str508,str509,
+  str510,str511,str512,str513,str514,str515,str516,str517,str518,str519,
+  str520,str521,str522,str523,str524,str525,str526,str527,str528,str529,
   str530,
   str531,
   str532,
@@ -2371,9 +2237,15 @@ void headsUpSuggest(byte letter, byte place)
   {//given we are talking letters we have suggestions for
     sChar[place] = (char)letter;
   }
+  else if(letter == 8)//backspace case
+  {
+    if(place == 0xff){firstCap = false;}
+    else if(place < CHECKABLE_CHARS){sChar[place + 1] = 0;}
+    return;
+  }
   else
   {
-    if(letter == IMPLICIT_SPACE && place != 0xff)
+    if(letter == IMPLICIT_SPACE && place < CHECKABLE_CHARS && buff[place])
     {
       for(byte i = 0; i < place + 1; i++){Keyboard.write(8);}
       Keyboard.print(buff);//print suggestion
@@ -2396,5 +2268,6 @@ void headsUpSuggest(byte letter, byte place)
         return; //Mission accomplished: suggestion found
       }
     }
-  }
+  }//unsuccesfull search
+  for(byte rm = 0; rm < LARGEST_WRD; rm++){buff[rm] = 0;}//remove last search
 }
