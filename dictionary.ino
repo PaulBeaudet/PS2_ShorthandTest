@@ -25,7 +25,7 @@ const char str33[] PROGMEM = "all";    const char str34[] PROGMEM = "get";
 const char str35[] PROGMEM = "her";    const char str36[] PROGMEM = "out";
 const char str37[] PROGMEM = "see";    const char str38[] PROGMEM = "time";
 const char str39[] PROGMEM = "take";   const char str40[] PROGMEM = "some";
-const char str41[] PROGMEM = "could";  const char str42[] PROGMEM = "year";
+const char str41[] PROGMEM = "could";  const char str42[] PROGMEM = "yes";
 const char str43[] PROGMEM = "into";   const char str44[] PROGMEM = "its";
 const char str45[] PROGMEM = "more";   const char str46[] PROGMEM = "about";
 const char str47[] PROGMEM = "now";    const char str48[] PROGMEM = "your";
@@ -56,20 +56,20 @@ const char str95[] PROGMEM = "hand";   const char str96[] PROGMEM = "school";
 const char str97[] PROGMEM = "small";  const char str98[] PROGMEM = "place";
 const char str99[] PROGMEM = "away";   const char str100[] PROGMEM = "keep";
 const char str101[] PROGMEM = "point"; 
-const char str102[] PROGMEM = "different";
-const char str103[] PROGMEM = "large"; const char str104[] PROGMEM = "off";
+const char str102[] PROGMEM = "did";
+const char str103[] PROGMEM = "large"; const char str104[] PROGMEM = "often";
 const char str105[] PROGMEM = "follow";const char str106[] PROGMEM = "turn";
 const char str107[] PROGMEM = "end";   const char str108[] PROGMEM = "during";
 const char str109[] PROGMEM = "bring"; const char str110[] PROGMEM = "example";
 const char str111[] PROGMEM = "family";const char str112[] PROGMEM = "rather";
 const char str113[] PROGMEM = "write"; const char str114[] PROGMEM = "percent";
 const char str115[] PROGMEM = "both";  const char str116[] PROGMEM = "run";
-const char str117[] PROGMEM = "right"; const char str118[] PROGMEM = "every";
+const char str117[] PROGMEM = "right"; const char str118[] PROGMEM = "ever";
 const char str119[] PROGMEM = "side";  const char str120[] PROGMEM = "night";
 const char str121[] PROGMEM = "important";const char str122[] PROGMEM = "eye";
 const char str123[] PROGMEM = "question";const char str124[] PROGMEM = "order";
-const char str125[] PROGMEM = "development";
-const char str126[] PROGMEM = "national";
+const char str125[] PROGMEM = "develop";
+const char str126[] PROGMEM = "national";//<--uncommon
 const char str127[] PROGMEM = "room";  const char str128[] PROGMEM = "effect";
 const char str129[] PROGMEM = "big";   const char str130[] PROGMEM = "idea";
 const char str131[] PROGMEM = "job";   const char str132[] PROGMEM = "result";
@@ -92,7 +92,7 @@ const char str162[] PROGMEM = "human";
 const char str163[] PROGMEM = "picture";const char str164[] PROGMEM = "occur";
 const char str165[] PROGMEM = "either";
 const char str166[] PROGMEM = "knowledge";
-const char str167[] PROGMEM = "attention";
+const char str167[] PROGMEM = "at";//attention: cut shorthand that are words
 const char str168[] PROGMEM = "floor"; const char str169[] PROGMEM = "myself";
 const char str170[] PROGMEM = "obtain";const char str171[] PROGMEM = "glass";
 const char str172[] PROGMEM = "skill"; const char str173[] PROGMEM = "oil";
@@ -115,8 +115,9 @@ const char str200[] PROGMEM = "ultimately";
 const char str201[] PROGMEM = "psychological";
 const char str202[] PROGMEM = "vulnerable";
 const char str203[] PROGMEM = "hypothesis";
-const char str204[] PROGMEM = "ethnic";
-const char str205[] PROGMEM = "jew";    const char str206[] PROGMEM = "yield";
+const char str204[] PROGMEM = "ethnic";// <------uncommon
+const char str205[] PROGMEM = "jew";   // <------ 
+const char str206[] PROGMEM = "yield";
 const char str207[] PROGMEM = "rhythm"; const char str208[] PROGMEM = "episode";
 const char str209[] PROGMEM = "oxygen"; const char str210[] PROGMEM = "ghost";
 const char str211[] PROGMEM = "bye";    const char str212[] PROGMEM = "dynamic";
@@ -125,14 +126,16 @@ const char str215[] PROGMEM = "omit";   const char str216[] PROGMEM = "oak";
 const char str217[] PROGMEM = "dwelling";const char str218[] PROGMEM = "ozone";
 const char str219[] PROGMEM = "aesthetic";const char str220[] PROGMEM = "axis";
 const char str221[] PROGMEM = "umbrella";const char str222[] PROGMEM = "ion";
-const char str223[] PROGMEM = "aquarium";const char str224[] PROGMEM = "ivory";
+const char str223[] PROGMEM = "aquarium";
+const char str224[] PROGMEM = "ivory";// <--- uncommon
 //-----------------Three letter combos below -----------------------------
-const char str225[] PROGMEM = "this";   const char str226[] PROGMEM = "they";
-const char str227[] PROGMEM = "what";   const char str228[] PROGMEM = "come";
+const char str225[] PROGMEM = "this";   
+const char str226[] PROGMEM = "their";//<-- realword
+const char str227[] PROGMEM = "what";   const char str228[] PROGMEM = "common";
 const char str229[] PROGMEM = "than";   const char str230[] PROGMEM = "also";
 const char str231[] PROGMEM = "when";   const char str232[] PROGMEM = "want";
-const char str233[] PROGMEM = "between";const char str234[] PROGMEM = "many";
-const char str235[] PROGMEM = "those";  const char str236[] PROGMEM = "yeah";
+const char str233[] PROGMEM = "better";const char str234[] PROGMEM = "many";
+const char str235[] PROGMEM = "though"; const char str236[] PROGMEM = "yeah";
 const char str237[] PROGMEM = "through";const char str238[] PROGMEM = "here";
 const char str239[] PROGMEM = "work";   const char str240[] PROGMEM = "become";
 const char str241[] PROGMEM = "government";const char str242[] PROGMEM = "life";
@@ -140,28 +143,29 @@ const char str243[] PROGMEM = "woman";  const char str244[] PROGMEM = "seem";
 const char str245[] PROGMEM = "same";   const char str246[] PROGMEM = "need";
 const char str247[] PROGMEM = "much";   const char str248[] PROGMEM = "group";
 const char str249[] PROGMEM = "however";const char str250[] PROGMEM = "another";
-const char str251[] PROGMEM = "show";   const char str252[] PROGMEM = "course";
+const char str251[] PROGMEM = "show";   const char str252[] PROGMEM = "could";
 const char str253[] PROGMEM = "shall";  const char str254[] PROGMEM = "against";
 const char str255[] PROGMEM = "never";  const char str256[] PROGMEM = "most";
 const char str257[] PROGMEM = "service";const char str258[] PROGMEM = "call";
-const char str259[] PROGMEM = "party";  const char str260[] PROGMEM = "high";
+const char str259[] PROGMEM = "part";  const char str260[] PROGMEM = "high";
 const char str261[] PROGMEM = "something";
 const char str262[] PROGMEM = "before"; const char str263[] PROGMEM = "while";
-const char str264[] PROGMEM = "house";  const char str265[] PROGMEM = "provide";
+const char str264[] PROGMEM = "house";  const char str265[] PROGMEM = "problem";
 const char str266[] PROGMEM = "week";   const char str267[] PROGMEM = "hold";
 const char str268[] PROGMEM = "member"; const char str269[] PROGMEM = "always";
 const char str270[] PROGMEM = "next";   const char str271[] PROGMEM = "without";
 const char str272[] PROGMEM = "local";  const char str273[] PROGMEM = "begin";
 const char str274[] PROGMEM = "although";const char str275[] PROGMEM = "fact";
-const char str276[] PROGMEM = "social"; const char str277[] PROGMEM = "state";
+const char str276[] PROGMEM = "social";
+const char str277[] PROGMEM = "standard"; //confusing: stand,staple,state ext
 const char str278[] PROGMEM = "long";   const char str279[] PROGMEM = "help";
 const char str280[] PROGMEM = "home";   const char str281[] PROGMEM = "month";
-const char str282[] PROGMEM = "head";
+const char str282[] PROGMEM = "head"; //confusing:heat
 const char str283[] PROGMEM = "information";
 const char str284[] PROGMEM = "business";const char str285[] PROGMEM = "play";
 const char str286[] PROGMEM = "power";  const char str287[] PROGMEM = "change";
-const char str288[] PROGMEM = "move";const char str289[] PROGMEM = "interest";
-const char str290[] PROGMEM = "book";const char str291[] PROGMEM = "often";
+const char str288[] PROGMEM = "move";  const char str289[] PROGMEM = "interest";
+const char str290[] PROGMEM = "book";   const char str291[] PROGMEM = "often";
 const char str292[] PROGMEM = "young";  const char str293[] PROGMEM = "water";
 const char str294[] PROGMEM = "form";   const char str295[] PROGMEM = "perhaps";
 const char str296[] PROGMEM = "meet";   const char str297[] PROGMEM = "level";
@@ -169,13 +173,14 @@ const char str298[] PROGMEM = "until";  const char str299[] PROGMEM = "policy";
 const char str300[] PROGMEM = "include";const char str301[] PROGMEM = "believe";
 const char str302[] PROGMEM = "already";
 const char str303[] PROGMEM = "possible";
-const char str304[] PROGMEM = "nothing";const char str305[] PROGMEM = "line";
+const char str304[] PROGMEM = "notice";const char str305[] PROGMEM = "line";
 const char str306[] PROGMEM = "allow";  const char str307[] PROGMEM = "lead";
 const char str308[] PROGMEM = "study";  const char str309[] PROGMEM = "live";
 const char str310[] PROGMEM = "since";  const char str311[] PROGMEM = "name";
 const char str312[] PROGMEM = "body";   const char str313[] PROGMEM = "happen";
 const char str314[] PROGMEM = "friend"; const char str315[] PROGMEM = "almost";
-const char str316[] PROGMEM = "carry";  const char str317[] PROGMEM = "early";
+const char str316[] PROGMEM = "carry";  
+const char str317[] PROGMEM = "early";//realword confusing: earth
 const char str318[] PROGMEM = "himself";const char str319[] PROGMEM = "public";
 const char str320[] PROGMEM = "together";const char str321[] PROGMEM = "talk";
 const char str322[] PROGMEM = "report"; const char str323[] PROGMEM = "market";
@@ -183,11 +188,10 @@ const char str324[] PROGMEM = "continue";const char str325[] PROGMEM = "able";
 const char str326[] PROGMEM = "later";  const char str327[] PROGMEM = "rate";
 const char str328[] PROGMEM = "door";   const char str329[] PROGMEM = "office";
 const char str330[] PROGMEM = "reason"; const char str331[] PROGMEM = "less";
-const char str332[] PROGMEM = "minister";
-const char str333[] PROGMEM = "subject";const char str334[] PROGMEM = "term";
-const char str335[] PROGMEM = "involve";const char str336[] PROGMEM = "sort";
-const char str337[] PROGMEM = "require";const char str338[] PROGMEM = "suggest";
-const char str339[] PROGMEM = "towards";
+const char str332[] PROGMEM = "minute"; const char str333[] PROGMEM = "subject";
+const char str334[] PROGMEM = "term";   const char str335[] PROGMEM = "involve";
+const char str336[] PROGMEM = "sort";   const char str337[] PROGMEM = "require";
+const char str338[] PROGMEM = "suggest";const char str339[] PROGMEM = "toward";
 const char str340[] PROGMEM = "anything";
 const char str341[] PROGMEM = "mother"; const char str342[] PROGMEM = "once";
 const char str343[] PROGMEM = "lose";   const char str344[] PROGMEM = "expect";
@@ -195,73 +199,76 @@ const char str345[] PROGMEM = "ever";   const char str346[] PROGMEM = "price";
 const char str347[] PROGMEM = "little";const char str348[] PROGMEM = "remember";
 const char str349[] PROGMEM = "cost";  const char str350[] PROGMEM = "matter";
 const char str351[] PROGMEM = "figure";const char str352[] PROGMEM = "research";
-const char str353[] PROGMEM = "actually";const char str354[] PROGMEM = "fall";
+const char str353[] PROGMEM = "act";    const char str354[] PROGMEM = "fall";
 const char str355[] PROGMEM = "today";  const char str356[] PROGMEM = "enough";
 const char str357[] PROGMEM = "moment"; const char str358[] PROGMEM = "girl";
-const char str359[] PROGMEM = "stop";   const char str360[] PROGMEM = "send";
+const char str359[] PROGMEM = "stood";  const char str360[] PROGMEM = "send";
 const char str361[] PROGMEM = "decide"; const char str362[] PROGMEM = "main";
 const char str363[] PROGMEM = "understand";
 const char str364[] PROGMEM = "develop";
 const char str365[] PROGMEM = "industry";
-const char str366[] PROGMEM = "receive";const char str367[] PROGMEM = "several";
+const char str366[] PROGMEM = "record"; const char str367[] PROGMEM = "several";
 const char str368[] PROGMEM = "return"; const char str369[] PROGMEM = "build";
-const char str370[] PROGMEM = "spend";  const char str371[] PROGMEM = "itself";
+const char str370[] PROGMEM = "special";const char str371[] PROGMEM = "itself";
 const char str372[] PROGMEM = "paper";  const char str373[] PROGMEM = "major";
 const char str374[] PROGMEM = "describe";const char str375[] PROGMEM = "agree";
-const char str376[] PROGMEM = "general";const char str377[] PROGMEM = "century";
-const char str378[] PROGMEM = "father";const char str379[] PROGMEM = "section";
-const char str380[] PROGMEM = "patient";const char str381[] PROGMEM = "around";
+const char str376[] PROGMEM = "general";const char str377[] PROGMEM = "center";
+const char str378[] PROGMEM = "father"; const char str379[] PROGMEM = "second";
+const char str380[] PROGMEM = "pattern";const char str381[] PROGMEM = "around";
 const char str382[] PROGMEM = "road";   const char str383[] PROGMEM = "table";
-const char str384[] PROGMEM = "church"; const char str385[] PROGMEM = "likely";
+const char str384[] PROGMEM = "church"; const char str385[] PROGMEM = "like";
 const char str386[] PROGMEM = "team";   const char str387[] PROGMEM = "death";
 const char str388[] PROGMEM = "soon";   const char str389[] PROGMEM = "certain";
 const char str390[] PROGMEM = "half";const char str391[] PROGMEM = "language";
-const char str392[] PROGMEM = "walk";const char str393[] PROGMEM = "difficult";
+const char str392[] PROGMEM = "walk";const char str393[] PROGMEM = "different";
 const char str394[] PROGMEM = "department";
 const char str395[] PROGMEM = "morning"; const char str396[] PROGMEM = "hope";
 const char str397[] PROGMEM = "across";  const char str398[] PROGMEM = "letter";
 const char str399[] PROGMEM = "evidence";const char str400[] PROGMEM = "foot";
 const char str401[] PROGMEM = "clear";   const char str402[] PROGMEM = "role";
 const char str403[] PROGMEM = "practice";const char str404[] PROGMEM = "bank";
-const char str405[] PROGMEM = "support"; const char str406[] PROGMEM = "sell";
+const char str405[] PROGMEM = "support"; const char str406[] PROGMEM = "select";
 const char str407[] PROGMEM = "range";   const char str408[] PROGMEM = "behind";
-const char str409[] PROGMEM = "sure";    const char str410[] PROGMEM = "pass";
-const char str411[] PROGMEM = "thus";    const char str412[] PROGMEM = "accept";
-const char str413[] PROGMEM = "further"; const char str414[] PROGMEM = "club";
-const char str415[] PROGMEM = "cause";const char str416[] PROGMEM = "history";
-const char str417[] PROGMEM = "trade";const char str418[] PROGMEM = "situation";
-const char str419[] PROGMEM = "whose";const char str420[] PROGMEM = "relation";
+const char str409[] PROGMEM = "surface"; const char str410[] PROGMEM = "pass";
+const char str411[] PROGMEM = "thursday";const char str412[] PROGMEM = "accept";
+const char str413[] PROGMEM = "further"; const char str414[] PROGMEM = "clue";
+const char str415[] PROGMEM = "cause";
+const char str416[] PROGMEM = "history";//<--realword
+const char str417[] PROGMEM = "travel";
+const char str418[] PROGMEM = "situation";//<--realword
+const char str419[] PROGMEM = "whose"; //<--realword
+const char str420[] PROGMEM = "relation";
 const char str421[] PROGMEM = "strong";const char str422[] PROGMEM = "field";
 const char str423[] PROGMEM = "free";  const char str424[] PROGMEM = "break";
-const char str425[] PROGMEM = "yesterday";
+const char str425[] PROGMEM = "yesterday";//<--realword
 const char str426[] PROGMEM = "window";const char str427[] PROGMEM = "wait";
 const char str428[] PROGMEM = "usually";const char str429[] PROGMEM = "wife";
 const char str430[] PROGMEM = "cover";const char str431[] PROGMEM = "apply";
 const char str432[] PROGMEM = "raise";const char str433[] PROGMEM = "sale";
 const char str434[] PROGMEM = "light";const char str435[] PROGMEM = "claim";
 const char str436[] PROGMEM = "basically";const char str437[] PROGMEM = "rule";
-const char str438[] PROGMEM = "similar";const char str439[] PROGMEM = "quality";
+const char str438[] PROGMEM = "simple";const char str439[] PROGMEM = "quality";
 const char str440[] PROGMEM = "nature";const char str441[] PROGMEM = "data";
 const char str442[] PROGMEM = "necessary";const char str443[] PROGMEM = "pound";
 const char str444[] PROGMEM = "method";const char str445[] PROGMEM = "unit";
 const char str446[] PROGMEM = "board";const char str447[] PROGMEM = "true";
 const char str448[] PROGMEM = "detail";const char str449[] PROGMEM = "model";
-const char str450[] PROGMEM = "bear";const char str451[] PROGMEM = "join";
+const char str450[] PROGMEM = "beauty";const char str451[] PROGMEM = "join";
 const char str452[] PROGMEM = "reduce";
 const char str453[] PROGMEM = "establish";
 const char str454[] PROGMEM = "easy";  const char str455[] PROGMEM = "hospital";
 const char str456[] PROGMEM = "scheme";const char str457[] PROGMEM = "choose";
 const char str458[] PROGMEM = "wish";  const char str459[] PROGMEM = "achieve";
-const char str460[] PROGMEM = "financial";const char str461[] PROGMEM = "poor";
-const char str462[] PROGMEM = "director";const char str463[] PROGMEM = "drive";
-const char str464[] PROGMEM = "along";   const char str465[] PROGMEM = "amount";
+const char str460[] PROGMEM = "final"; const char str461[] PROGMEM = "poor";
+const char str462[] PROGMEM = "direct";const char str463[] PROGMEM = "drive";
+const char str464[] PROGMEM = "along"; const char str465[] PROGMEM = "amount";
 const char str466[] PROGMEM = "operation";const char str467[] PROGMEM = "fail";
 const char str468[] PROGMEM = "opportunity";
-const char str469[] PROGMEM = "firm";    const char str470[] PROGMEM = "source";
+const char str469[] PROGMEM = "fire";    const char str470[] PROGMEM = "south";
 const char str471[] PROGMEM = "wide";    const char str472[] PROGMEM = "kill";
 const char str473[] PROGMEM = "labour";const char str474[] PROGMEM = "various";
 const char str475[] PROGMEM = "test";  const char str476[] PROGMEM = "close";
-const char str477[] PROGMEM = "love";  const char str478[] PROGMEM = "colour";
+const char str477[] PROGMEM = "love";  const char str478[] PROGMEM = "color";
 const char str479[] PROGMEM = "benefit";const char str480[] PROGMEM = "animal";
 const char str481[] PROGMEM = "election";
 const char str482[] PROGMEM = "purpose";const char str483[] PROGMEM = "rise";
@@ -270,7 +277,7 @@ const char str486[] PROGMEM = "hair";   const char str487[] PROGMEM = "prepare";
 const char str488[] PROGMEM = "piece";  const char str489[] PROGMEM = "discuss";
 const char str490[] PROGMEM = "front";  const char str491[] PROGMEM = "royal";
 const char str492[] PROGMEM = "tree";const char str493[] PROGMEM = "population";
-const char str494[] PROGMEM = "catch";  const char str495[] PROGMEM = "pick";
+const char str494[] PROGMEM = "catch";  const char str495[] PROGMEM = "picture";
 const char str496[] PROGMEM = "page";   const char str497[] PROGMEM = "enjoy";
 const char str498[] PROGMEM = "instead";const char str499[] PROGMEM = "wear";
 const char str500[] PROGMEM = "size";
@@ -284,18 +291,17 @@ const char str512[] PROGMEM = "arrive";const char str513[] PROGMEM = "ensure";
 const char str514[] PROGMEM = "demand";const char str515[] PROGMEM = "pull";
 const char str516[] PROGMEM = "doctor";const char str517[] PROGMEM = "refer";
 const char str518[] PROGMEM = "feature";const char str519[] PROGMEM = "step";
-const char str520[] PROGMEM = "following";
-const char str521[] PROGMEM = "machine";
-const char str522[] PROGMEM = "association";
-const char str523[] PROGMEM = "film";   const char str524[] PROGMEM = "region";
+const char str520[] PROGMEM = "follow"; const char str521[] PROGMEM = "machine";
+const char str522[] PROGMEM = "association"; //realword
+const char str523[] PROGMEM = "fill";   const char str524[] PROGMEM = "region";
 const char str525[] PROGMEM = "effort"; const char str526[] PROGMEM = "award";
 const char str527[] PROGMEM = "village";
-const char str528[] PROGMEM = "organisation";
+const char str528[] PROGMEM = "organisation";//13 char
 const char str529[] PROGMEM = "news";   const char str530[] PROGMEM = "nice";
 const char str531[] PROGMEM = "cell";   const char str532[] PROGMEM = "current";
 const char str533[] PROGMEM = "legal";  const char str534[] PROGMEM = "energy";
 const char str535[] PROGMEM = "degree"; const char str536[] PROGMEM = "mile";
-const char str537[] PROGMEM = "means";  const char str538[] PROGMEM = "above";
+const char str537[] PROGMEM = "measure";const char str538[] PROGMEM = "above";
 const char str539[] PROGMEM = "task";   const char str540[] PROGMEM = "affect";
 const char str541[] PROGMEM = "please";const char str542[] PROGMEM = "function";
 const char str543[] PROGMEM = "identify";
@@ -306,14 +312,14 @@ const char str549[] PROGMEM = "science";const char str550[] PROGMEM = "doubt";
 const char str551[] PROGMEM = "horse";  const char str552[] PROGMEM = "answer";
 const char str553[] PROGMEM = "suffer";const char str554[] PROGMEM = "announce";
 const char str555[] PROGMEM = "user";  const char str556[] PROGMEM = "normal";
-const char str557[] PROGMEM = "quickly";const char str558[] PROGMEM = "army";
+const char str557[] PROGMEM = "quick";const char str558[] PROGMEM = "army";
 const char str559[] PROGMEM = "husband";const char str560[] PROGMEM = "visit";
 const char str561[] PROGMEM = "capital";const char str562[] PROGMEM = "season";
 const char str563[] PROGMEM = "significant";
 const char str564[] PROGMEM = "economy";const char str565[] PROGMEM = "duty";
 const char str566[] PROGMEM = "attempt";const char str567[] PROGMEM = "save";
 const char str568[] PROGMEM = "suddenly";
-const char str569[] PROGMEM = "brother";const char str570[] PROGMEM = "improve";
+const char str569[] PROGMEM = "brought";const char str570[] PROGMEM = "improve";
 const char str571[] PROGMEM = "avoid";  const char str572[] PROGMEM = "wonder";
 const char str573[] PROGMEM = "tend";   const char str574[] PROGMEM = "title";
 const char str575[] PROGMEM = "hotel";  const char str576[] PROGMEM = "aspect";
@@ -325,7 +331,7 @@ const char str584[] PROGMEM = "outside";const char str585[] PROGMEM = "total";
 const char str586[] PROGMEM = "division";const char str587[] PROGMEM = "king";
 const char str588[] PROGMEM = "image";const char str589[] PROGMEM = "obviously";
 const char str590[] PROGMEM = "unless";
-const char str591[] PROGMEM = "circumstance";
+const char str591[] PROGMEM = "circumstance";//13 char
 const char str592[] PROGMEM = "mention";const char str593[] PROGMEM = "client";
 const char str594[] PROGMEM = "admit"; const char str595[] PROGMEM = "original";
 const char str596[] PROGMEM = "exactly";const char str597[] PROGMEM = "beyond";
@@ -339,13 +345,13 @@ const char str609[] PROGMEM = "library"; const char str610[] PROGMEM = "pupil";
 const char str611[] PROGMEM = "dark";const char str612[] PROGMEM = "culture";
 const char str613[] PROGMEM = "blood";   const char str614[] PROGMEM = "bill";
 const char str615[] PROGMEM = "extent";  const char str616[] PROGMEM = "apart";
-const char str617[] PROGMEM = "text";    const char str618[] PROGMEM = "mouth";
+const char str617[] PROGMEM = "text";const char str618[] PROGMEM = "mountain";
 const char str619[] PROGMEM = "fish";    const char str620[] PROGMEM = "enable";
 const char str621[] PROGMEM = "trouble";const char str622[] PROGMEM = "payment";
 const char str623[] PROGMEM = "best";const char str624[] PROGMEM = "lady";
 const char str625[] PROGMEM = "article";const char str626[] PROGMEM = "object";
 const char str627[] PROGMEM = "immediately";
-const char str628[] PROGMEM = "television";
+const char str628[] PROGMEM = "tell";
 const char str629[] PROGMEM = "agency"; const char str630[] PROGMEM = "except";
 const char str631[] PROGMEM = "check";  const char str632[] PROGMEM = "laugh";
 const char str633[] PROGMEM = "weight";const char str634[] PROGMEM = "solution";
@@ -358,12 +364,12 @@ const char str645[] PROGMEM = "software";const char str646[] PROGMEM = "lack";
 const char str647[] PROGMEM = "blue";const char str648[] PROGMEM = "radio";
 const char str649[] PROGMEM = "bird";const char str650[] PROGMEM = "green";
 const char str651[] PROGMEM = "message";
-const char str652[] PROGMEM = "afternoon";const char str653[] PROGMEM = "fully";
-const char str654[] PROGMEM = "race";     const char str655[] PROGMEM = "gain";
+const char str652[] PROGMEM = "after";const char str653[] PROGMEM = "fully";
+const char str654[] PROGMEM = "race"; const char str655[] PROGMEM = "gain";
 const char str656[] PROGMEM = "scene";const char str657[] PROGMEM = "kitchen";
 const char str658[] PROGMEM = "arise";const char str659[] PROGMEM = "network";
 const char str660[] PROGMEM = "peace";const char str661[] PROGMEM = "employee";
-const char str662[] PROGMEM = "scale";const char str663[] PROGMEM = "otherwise";
+const char str662[] PROGMEM = "scale";const char str663[] PROGMEM = "other";
 const char str664[] PROGMEM = "owner";const char str665[] PROGMEM = "corner";
 const char str666[] PROGMEM = "sport";const char str667[] PROGMEM = "hang";
 const char str668[] PROGMEM = "civil";const char str669[] PROGMEM = "crime";
@@ -384,20 +390,21 @@ const char str695[] PROGMEM = "skin";   const char str696[] PROGMEM = "island";
 const char str697[] PROGMEM = "separate";const char str698[] PROGMEM = "danger";
 const char str699[] PROGMEM = "credit";
 const char str700[] PROGMEM = "candidate";
-const char str701[] PROGMEM = "merely";  const char str702[] PROGMEM = "plus";
-const char str703[] PROGMEM = "debate";  const char str704[] PROGMEM = "vote";
-const char str705[] PROGMEM = "western"; const char str706[] PROGMEM = "settle";
-const char str707[] PROGMEM = "largely";const char str708[] PROGMEM = "observe";
+const char str701[] PROGMEM = "merely"; const char str702[] PROGMEM = "plus";
+const char str703[] PROGMEM = "debate"; const char str704[] PROGMEM = "vote";
+const char str705[] PROGMEM = "western";const char str706[] PROGMEM = "settle";
+const char str707[] PROGMEM = "large";  const char str708[] PROGMEM = "observe";
 const char str709[] PROGMEM = "limit";  const char str710[] PROGMEM = "deny";
-const char str711[] PROGMEM = "writer"; const char str712[] PROGMEM = "video";
+const char str711[] PROGMEM = "write"; const char str712[] PROGMEM = "video";
 const char str713[] PROGMEM = "vehicle";const char str714[] PROGMEM = "cross";
 const char str715[] PROGMEM = "farm";   const char str716[] PROGMEM = "grant";
 const char str717[] PROGMEM = "phone";  const char str718[] PROGMEM = "flower";
-const char str719[] PROGMEM = "injury"; const char str720[] PROGMEM = "stick";
+const char str719[] PROGMEM = "injury"; const char str720[] PROGMEM = "still";
 const char str721[] PROGMEM = "battle"; const char str722[] PROGMEM = "sleep";
 const char str723[] PROGMEM = "volume"; const char str724[] PROGMEM = "ship";
 const char str725[] PROGMEM = "background";
-const char str726[] PROGMEM = "touch";  const char str727[] PROGMEM = "sexual";
+const char str726[] PROGMEM = "touch";  
+const char str727[] PROGMEM = "sexual";//<--realword uncommon
 const char str728[] PROGMEM = "ordinary";
 const char str729[] PROGMEM = "cabinet";const char str730[] PROGMEM = "engine";
 const char str731[] PROGMEM = "tonight";const char str732[] PROGMEM = "adult";
@@ -409,16 +416,17 @@ const char str741[] PROGMEM = "coffee"; const char str742[] PROGMEM = "sheet";
 const char str743[] PROGMEM = "equally";const char str744[] PROGMEM = "session";
 const char str745[] PROGMEM = "loan";   const char str746[] PROGMEM = "bind";
 const char str747[] PROGMEM = "victim";const char str748[] PROGMEM = "audience";
-const char str749[] PROGMEM = "famous"; const char str750[] PROGMEM = "master";
+const char str749[] PROGMEM = "family"; const char str750[] PROGMEM = "master";
 const char str751[] PROGMEM = "potential";
-const char str752[] PROGMEM = "exhibition";
-const char str753[] PROGMEM = "chief";  const char str754[] PROGMEM = "middle";
+const char str752[] PROGMEM = "eight";// exhibition<--uncommon
+const char str753[] PROGMEM = "children";  
+const char str754[] PROGMEM = "middle";
 const char str755[] PROGMEM = "unable"; const char str756[] PROGMEM = "acquire";
 const char str757[] PROGMEM = "favour"; const char str758[] PROGMEM = "flat";
 const char str759[] PROGMEM = "rural";  const char str760[] PROGMEM = "deliver";
 const char str761[] PROGMEM = "nobody"; const char str762[] PROGMEM = "onto";
 const char str763[] PROGMEM = "aircraft";const char str764[] PROGMEM = "bright";
-const char str765[] PROGMEM = "unemployment";
+const char str765[] PROGMEM = "unemployment";//13char
 const char str766[] PROGMEM = "spread";  const char str767[] PROGMEM = "flight";
 const char str768[] PROGMEM = "suitable";const char str769[] PROGMEM = "ought";
 const char str770[] PROGMEM = "reject";  const char str771[] PROGMEM = "dream";
@@ -426,9 +434,10 @@ const char str772[] PROGMEM = "pension"; const char str773[] PROGMEM = "afraid";
 const char str774[] PROGMEM = "murder";  const char str775[] PROGMEM = "hide";
 const char str776[] PROGMEM = "absence";const char str777[] PROGMEM = "average";
 const char str778[] PROGMEM = "acid";    const char str779[] PROGMEM = "bottle";
-const char str780[] PROGMEM = "bedroom";
+const char str780[] PROGMEM = "game";//<--bedroom
 const char str781[] PROGMEM = "temperature";
-const char str782[] PROGMEM = "wave";  const char str783[] PROGMEM = "magazine";
+const char str782[] PROGMEM = "wave";
+const char str783[] PROGMEM = "people";//<--magazine
 const char str784[] PROGMEM = "silence";
 const char str785[] PROGMEM = "educational";
 const char str786[] PROGMEM = "tape";const char str787[] PROGMEM = "elsewhere";
@@ -440,14 +449,14 @@ const char str796[] PROGMEM = "initiative";const char str797[] PROGMEM = "fast";
 const char str798[] PROGMEM = "gold";const char str799[] PROGMEM = "shut";
 const char str800[] PROGMEM = "journey";
 const char str801[] PROGMEM = "violence";
-const char str802[] PROGMEM = "noise";const char str803[] PROGMEM = "escape";
-const char str804[] PROGMEM = "score";const char str805[] PROGMEM = "justice";
-const char str806[] PROGMEM = "upper";const char str807[] PROGMEM = "tooth";
-const char str808[] PROGMEM = "nurse";const char str809[] PROGMEM = "narrow";
-const char str810[] PROGMEM = "coal";const char str811[] PROGMEM = "wild";
+const char str802[] PROGMEM = "noise";  const char str803[] PROGMEM = "escape";
+const char str804[] PROGMEM = "score";  const char str805[] PROGMEM = "justice";
+const char str806[] PROGMEM = "upper";  const char str807[] PROGMEM = "took";
+const char str808[] PROGMEM = "nurse";  const char str809[] PROGMEM = "narrow";
+const char str810[] PROGMEM = "coal";   const char str811[] PROGMEM = "wild";
 const char str812[] PROGMEM = "neither";const char str813[] PROGMEM = "guide";
 const char str814[] PROGMEM = "pocket"; const char str815[] PROGMEM = "fruit";
-const char str816[] PROGMEM = "ride";const char str817[] PROGMEM = "foundation";
+const char str816[] PROGMEM = "ride";   const char str817[] PROGMEM = "found";
 const char str818[] PROGMEM = "vital";  const char str819[] PROGMEM = "burn";
 const char str820[] PROGMEM = "jump";   const char str821[] PROGMEM = "derive";
 const char str822[] PROGMEM = "satisfy";const char str823[] PROGMEM = "focus";
@@ -465,15 +474,16 @@ const char str842[] PROGMEM = "liability";const char str843[] PROGMEM = "hate";
 const char str844[] PROGMEM = "vast";   const char str845[] PROGMEM = "soil";
 const char str846[] PROGMEM = "nose";   const char str847[] PROGMEM = "lord";
 const char str848[] PROGMEM = "ticket"; const char str849[] PROGMEM = "editor";
-const char str850[] PROGMEM = "bone";   const char str851[] PROGMEM = "knee";
-const char str852[] PROGMEM = "unfortunately";
+const char str850[] PROGMEM = "bone";   const char str851[] PROGMEM = "knew";
+const char str852[] PROGMEM = "unfortunately";//14char
 const char str853[] PROGMEM = "academic";
 const char str854[] PROGMEM = "lawyer";const char str855[] PROGMEM = "rapidly";
 const char str856[] PROGMEM = "citizen";
 const char str857[] PROGMEM = "ourselves";
-const char str858[] PROGMEM = "height"; const char str859[] PROGMEM = "knock";
+const char str858[] PROGMEM = "height"; const char str859[] PROGMEM = "know";
 const char str860[] PROGMEM = "inner";  const char str861[] PROGMEM = "crucial";
-const char str862[] PROGMEM = "boundary";const char str863[] PROGMEM = "queen";
+const char str862[] PROGMEM = "boundary";
+const char str863[] PROGMEM = "question";
 const char str864[] PROGMEM = "virtually";
 const char str865[] PROGMEM = "inquiry";const char str866[] PROGMEM = "topic";
 const char str867[] PROGMEM = "unknown";const char str868[] PROGMEM = "badly";
@@ -495,20 +505,21 @@ const char str895[] PROGMEM = "abroad"; const char str896[] PROGMEM = "keen";
 const char str897[] PROGMEM = "guess";const char str898[] PROGMEM = "valuable";
 const char str899[] PROGMEM = "layer";const char str900[] PROGMEM = "judgment";
 const char str901[] PROGMEM = "illness";const char str902[] PROGMEM = "cake";
-const char str903[] PROGMEM = "tired";  const char str904[] PROGMEM = "beer";
+const char str903[] PROGMEM = "tired";  const char str904[] PROGMEM = "been";
 const char str905[] PROGMEM = "federal";const char str906[] PROGMEM = "boss";
 const char str907[] PROGMEM = "urge";   const char str908[] PROGMEM = "being";
 const char str909[] PROGMEM = "guard";  const char str910[] PROGMEM = "bomb";
 const char str911[] PROGMEM = "dollar"; const char str912[] PROGMEM = "mood";
 const char str913[] PROGMEM = "habit";  const char str914[] PROGMEM = "cook";
-const char str915[] PROGMEM = "kiss";   const char str916[] PROGMEM = "wedding";
+const char str915[] PROGMEM = "kiss";
+const char str916[] PROGMEM = "were";//<--realword:wedding
 const char str917[] PROGMEM = "bishop"; const char str918[] PROGMEM = "mirror";
 const char str919[] PROGMEM = "symptom";const char str920[] PROGMEM = "global";
 const char str921[] PROGMEM = "aside";
 const char str922[] PROGMEM = "philosophy";
 const char str923[] PROGMEM = "gallery";
 const char str924[] PROGMEM = "emotional";
-const char str925[] PROGMEM = "cigarette";
+const char str925[] PROGMEM = "gave";//cigarette removed
 const char str926[] PROGMEM = "adequate";const char str927[] PROGMEM = "pale";
 const char str928[] PROGMEM = "input";
 const char str929[] PROGMEM = "phenomenon";const char str930[] PROGMEM = "kick";
@@ -521,7 +532,7 @@ const char str941[] PROGMEM = "mixture";const char str942[] PROGMEM = "sick";
 const char str943[] PROGMEM = "lake";   const char str944[] PROGMEM = "sand";
 const char str945[] PROGMEM = "knife";  const char str946[] PROGMEM = "sake";
 const char str947[] PROGMEM = "maximum";const char str948[] PROGMEM = "rush";
-const char str949[] PROGMEM = "numerous";const char str950[] PROGMEM = "honour";
+const char str949[] PROGMEM = "number";const char str950[] PROGMEM = "honour";
 const char str951[] PROGMEM = "fellow"; const char str952[] PROGMEM = "tight";
 const char str953[] PROGMEM = "anxiety";const char str954[] PROGMEM = "poverty";
 const char str955[] PROGMEM = "pipe";   const char str956[] PROGMEM = "split";
@@ -544,7 +555,7 @@ const char str983[] PROGMEM = "snap"; const char str984[] PROGMEM = "reward";
 const char str985[] PROGMEM = "vegetable";
 const char str986[] PROGMEM = "junior";const char str987[] PROGMEM = "mystery";
 const char str988[] PROGMEM = "upset"; const char str989[] PROGMEM = "till";
-const char str990[] PROGMEM = "tissue";const char str991[] PROGMEM = "turnover";
+const char str990[] PROGMEM = "tissue";const char str991[] PROGMEM = "turn";
 const char str992[] PROGMEM = "shrug"; const char str993[] PROGMEM = "ceiling";
 const char str994[] PROGMEM = "sail";  const char str995[] PROGMEM = "adjust";
 const char str996[] PROGMEM = "running";const char str997[] PROGMEM = "adapt";
@@ -556,16 +567,16 @@ const char str1004[] PROGMEM = "dust";  const char str1005[] PROGMEM = "album";
 const char str1006[] PROGMEM = "amendment";
 const char str1007[] PROGMEM = "tube";  const char str1008[] PROGMEM = "coin";
 const char str1009[] PROGMEM = "diary"; const char str1010[] PROGMEM = "flesh";
-const char str1011[] PROGMEM = "rugby";
-const char str1012[] PROGMEM = "psychology";
+const char str1011[] PROGMEM = "rugby"; //<--uncommon realword
+const char str1012[] PROGMEM = "psychology"; //<--uncommon
 const char str1013[] PROGMEM = "seize"; const char str1014[] PROGMEM = "button";
 const char str1015[] PROGMEM = "ultimate";
 const char str1016[] PROGMEM = "venture";
-const char str1017[] PROGMEM = "timber";
+const char str1017[] PROGMEM = "time";
 const char str1018[] PROGMEM = "gesture";const char str1019[] PROGMEM = "jury";
 const char str1020[] PROGMEM = "gaze";
-const char str1021[] PROGMEM = "sophisticated";
-const char str1022[] PROGMEM = "taxation";
+const char str1021[] PROGMEM = "sophisticated";//-14char
+const char str1022[] PROGMEM = "does";//<--realword: taxation
 const char str1023[] PROGMEM = "asleep"; const char str1024[] PROGMEM = "aids";
 const char str1025[] PROGMEM = "multiple";
 const char str1026[] PROGMEM = "evolution";
@@ -590,31 +601,33 @@ const char str1053[] PROGMEM = "hesitate";const char str1054[] PROGMEM = "rope";
 const char str1055[] PROGMEM = "gear"; const char str1056[] PROGMEM = "swallow";
 const char str1057[] PROGMEM = "rabbit";const char str1058[] PROGMEM = "tide";
 const char str1059[] PROGMEM = "brush"; const char str1060[] PROGMEM = "piano";
-const char str1061[] PROGMEM = "wound"; const char str1062[] PROGMEM = "bible";
+const char str1061[] PROGMEM = "would";
+const char str1062[] PROGMEM = "each";//<--uncommon realword: bible
 const char str1063[] PROGMEM = "hire";const char str1064[] PROGMEM = "gastric";
 const char str1065[] PROGMEM = "humour";const char str1066[] PROGMEM = "bulk";
 const char str1067[] PROGMEM = "emission";
 const char str1068[] PROGMEM = "naked";const char str1069[] PROGMEM = "toilet";
-const char str1070[] PROGMEM = "molecule";
+const char str1070[] PROGMEM = "molecule";//<--uncommon
 const char str1071[] PROGMEM = "fiction";
 const char str1072[] PROGMEM = "cinema"; const char str1073[] PROGMEM = "myth";
 const char str1074[] PROGMEM = "enforce";const char str1075[] PROGMEM = "pond";
-const char str1076[] PROGMEM = "diplomatic";
+const char str1076[] PROGMEM = "diplomatic";//<--uncommon realword
 const char str1077[] PROGMEM = "rebel";const char str1078[] PROGMEM = "loyalty";
 const char str1079[] PROGMEM = "physically";
-const char str1080[] PROGMEM = "biological";
+const char str1080[] PROGMEM = "biological";//<--uncommon
 const char str1081[] PROGMEM = "hierarchy";
 const char str1082[] PROGMEM = "seminar";const char str1083[] PROGMEM = "verse";
-const char str1084[] PROGMEM = "echo";const char str1085[] PROGMEM = "cupboard";
+const char str1084[] PROGMEM = "echo";
+const char str1085[] PROGMEM = "cupboard";//<--realword
 const char str1086[] PROGMEM = "gang";const char str1087[] PROGMEM = "unhappy";
 const char str1088[] PROGMEM = "aggressive";
 const char str1089[] PROGMEM = "rumour";
-const char str1090[] PROGMEM = "availability";
+const char str1090[] PROGMEM = "availability";//13char
 const char str1091[] PROGMEM = "ocean"; const char str1092[] PROGMEM = "sadly";
-const char str1093[] PROGMEM = "oral";  const char str1094[] PROGMEM = "hungry";
+const char str1093[] PROGMEM = "oral";const char str1094[] PROGMEM = "hundred";
 const char str1095[] PROGMEM = "romantic";const char str1096[] PROGMEM = "hint";
-const char str1097[] PROGMEM = "nasty";
-const char str1098[] PROGMEM = "duration";
+const char str1097[] PROGMEM = "nasty";//<--uncommon
+const char str1098[] PROGMEM = "during";
 const char str1099[] PROGMEM = "amazing";
 const char str1100[] PROGMEM = "crystal";const char str1101[] PROGMEM = "loud";
 const char str1102[] PROGMEM = "fade";
@@ -629,19 +642,18 @@ const char str1113[] PROGMEM = "lung";const char str1114[] PROGMEM = "teenager";
 const char str1115[] PROGMEM = "heel";const char str1116[] PROGMEM = "update";
 const char str1117[] PROGMEM = "giant";const char str1118[] PROGMEM = "sphere";
 const char str1119[] PROGMEM = "sword";const char str1120[] PROGMEM = "tutor";
-const char str1121[] PROGMEM = "downstairs";
+const char str1121[] PROGMEM = "down";
 const char str1122[] PROGMEM = "cafe";const char str1123[] PROGMEM = "fetch";
 const char str1124[] PROGMEM = "duck";const char str1125[] PROGMEM = "digital";
 const char str1126[] PROGMEM = "inherit";
-const char str1127[] PROGMEM = "chronic";
-const char str1128[] PROGMEM = "orchestra";
-const char str1129[] PROGMEM = "systematic";
-const char str1130[] PROGMEM = "navy";const char str1131[] PROGMEM = "juice";
-const char str1132[] PROGMEM = "nightmare";
-const char str1133[] PROGMEM = "slave";const char str1134[] PROGMEM = "elbow";
-const char str1135[] PROGMEM = "smart";const char str1136[] PROGMEM = "vanish";
+const char str1127[] PROGMEM = "chronic";  //<--uncommon
+const char str1128[] PROGMEM = "orchestra";//<--uncommon
+const char str1129[] PROGMEM = "system";const char str1130[] PROGMEM = "navy";
+const char str1131[] PROGMEM = "juice"; const char str1132[] PROGMEM = "night";
+const char str1133[] PROGMEM = "slave"; const char str1134[] PROGMEM = "elbow";
+const char str1135[] PROGMEM = "smart"; const char str1136[] PROGMEM = "vanish";
 const char str1137[] PROGMEM = "upwards";
-const char str1138[] PROGMEM = "geographical";
+const char str1138[] PROGMEM = "geography";
 const char str1139[] PROGMEM = "embrace";
 const char str1140[] PROGMEM = "endless";const char str1141[] PROGMEM = "dawn";
 const char str1142[] PROGMEM = "neutral";const char str1143[] PROGMEM = "vague";
@@ -653,44 +665,45 @@ const char str1151[] PROGMEM = "fitness";const char str1152[] PROGMEM = "rally";
 const char str1153[] PROGMEM = "vein";const char str1154[] PROGMEM = "awkward";
 const char str1155[] PROGMEM = "liquid";const char str1156[] PROGMEM = "nail";
 const char str1157[] PROGMEM = "atom";const char str1158[] PROGMEM = "auction";
-const char str1159[] PROGMEM = "takeover";
+const char str1159[] PROGMEM = "take";
 const char str1160[] PROGMEM = "rigid";const char str1161[] PROGMEM = "hedge";
 const char str1162[] PROGMEM = "eagle";
 const char str1163[] PROGMEM = "peculiar";const char str1164[] PROGMEM = "bold";
 const char str1165[] PROGMEM = "saying";const char str1166[] PROGMEM = "yacht";
 const char str1167[] PROGMEM = "fossil";const char str1168[] PROGMEM = "lump";
-const char str1169[] PROGMEM = "mobility";
-const char str1170[] PROGMEM = "goodness";
+const char str1169[] PROGMEM = "mobility";//<--realword
+const char str1170[] PROGMEM = "good";
 const char str1171[] PROGMEM = "onwards";const char str1172[] PROGMEM = "cave";
 const char str1173[] PROGMEM = "erect";  const char str1174[] PROGMEM = "tuck";
 const char str1175[] PROGMEM = "ruin";const char str1176[] PROGMEM = "dedicate";
-const char str1177[] PROGMEM = "bucket";
-const char str1178[] PROGMEM = "migration";
+const char str1177[] PROGMEM = "bucket";// <--uncommon
+const char str1178[] PROGMEM = "might";
 const char str1179[] PROGMEM = "ritual";
-const char str1180[] PROGMEM = "dioxide";const char str1181[] PROGMEM = "soap";
+const char str1180[] PROGMEM = "dioxide";//<--uncommon
+const char str1181[] PROGMEM = "soap";
 const char str1182[] PROGMEM = "bias";const char str1183[] PROGMEM = "eyebrow";
 const char str1184[] PROGMEM = "irrelevant";
 const char str1185[] PROGMEM = "ankle";const char str1186[] PROGMEM = "tobacco";
 const char str1187[] PROGMEM = "sauce";const char str1188[] PROGMEM = "bunch";
 const char str1189[] PROGMEM = "hook";const char str1190[] PROGMEM = "wicket";
-const char str1191[] PROGMEM = "donation";const char str1192[] PROGMEM = "tyre";
+const char str1191[] PROGMEM = "don't";const char str1192[] PROGMEM = "tyre";
 const char str1193[] PROGMEM = "elaborate";
 const char str1194[] PROGMEM = "dilemma";
 const char str1195[] PROGMEM = "utterly";
 const char str1196[] PROGMEM = "unpleasant";
 const char str1197[] PROGMEM = "sacred";const char str1198[] PROGMEM = "obey";
 const char str1199[] PROGMEM = "jeans";
-const char str1200[] PROGMEM = "boyfriend";
+const char str1200[] PROGMEM = "boyfriend"; // <--realword
 const char str1201[] PROGMEM = "viewer";const char str1202[] PROGMEM = "melt";
 const char str1203[] PROGMEM = "pump";const char str1204[] PROGMEM = "erosion";
 const char str1205[] PROGMEM = "lemon";const char str1206[] PROGMEM = "doing";
-const char str1207[] PROGMEM = "sunlight";
+const char str1207[] PROGMEM = "sunlight"; //<--realword
 const char str1208[] PROGMEM = "skull";const char str1209[] PROGMEM = "inland";
 const char str1210[] PROGMEM = "bless";const char str1211[] PROGMEM = "toss";
-const char str1212[] PROGMEM = "jewellery";
-const char str1213[] PROGMEM = "fond";const char str1214[] PROGMEM = "mammal";
+const char str1212[] PROGMEM = "jewellery"; //uncommon realword apparently wrong
+const char str1213[] PROGMEM = "fond"; const char str1214[] PROGMEM = "mammal";
 const char str1215[] PROGMEM = "sovereignty";
-const char str1216[] PROGMEM = "enzyme";const char str1217[] PROGMEM = "laser";
+const char str1216[] PROGMEM = "enzyme";const char str1217[] PROGMEM = "last";
 const char str1218[] PROGMEM = "synthesis";
 const char str1219[] PROGMEM = "fusion";const char str1220[] PROGMEM = "onion";
 const char str1221[] PROGMEM = "rage";  const char str1222[] PROGMEM = "toxic";
@@ -703,8 +716,9 @@ const char str1228[] PROGMEM = "usage"; const char str1229[] PROGMEM = "jail";
 const char str1230[] PROGMEM = "fertility";
 const char str1231[] PROGMEM = "wolf";const char str1232[] PROGMEM = "orthodox";
 const char str1233[] PROGMEM = "jazz";const char str1234[] PROGMEM = "boil";
-const char str1235[] PROGMEM = "keyboard";
-const char str1236[] PROGMEM = "hammer";const char str1237[] PROGMEM = "given";
+const char str1235[] PROGMEM = "keyboard";//---realword
+const char str1236[] PROGMEM = "vowel";  //---realword:hammer
+const char str1237[] PROGMEM = "given";
 const char str1238[] PROGMEM = "dual";  const char str1239[] PROGMEM = "pepper";
 const char str1240[] PROGMEM = "ethical";
 const char str1241[] PROGMEM = "bicycle";
@@ -713,7 +727,7 @@ const char str1243[] PROGMEM = "glimpse";const char str1244[] PROGMEM = "alert";
 const char str1245[] PROGMEM = "node";   const char str1246[] PROGMEM = "lodge";
 const char str1247[] PROGMEM = "ignorance";
 const char str1248[] PROGMEM = "abbey";  const char str1249[] PROGMEM = "lobby";
-const char str1250[] PROGMEM = "tolerate";
+const char str1250[] PROGMEM = "told";
 const char str1251[] PROGMEM = "pudding";const char str1252[] PROGMEM = "cage";
 const char str1253[] PROGMEM = "ashamed";const char str1254[] PROGMEM = "amid";
 const char str1255[] PROGMEM = "exotic";
@@ -742,14 +756,15 @@ const char str1287[] PROGMEM = "asylum";
 const char str1288[] PROGMEM = "rhetoric";
 const char str1289[] PROGMEM = "jockey";const char str1290[] PROGMEM = "viable";
 const char str1291[] PROGMEM = "unsuccessful";
-const char str1292[] PROGMEM = "hemisphere";
+const char str1292[] PROGMEM = "hemisphere"; //<--realword
 const char str1293[] PROGMEM = "nominate";
-const char str1294[] PROGMEM = "arena";const char str1295[] PROGMEM = "vacuum";
+const char str1294[] PROGMEM = "area";
+const char str1295[] PROGMEM = "nine"; //vacuum<uncommon
 const char str1296[] PROGMEM = "jerk";
 const char str1297[] PROGMEM = "rehearsal";
 const char str1298[] PROGMEM = "bake"; const char str1299[] PROGMEM = "vector";
-const char str1300[] PROGMEM = "robbery";
-const char str1301[] PROGMEM = "aviation";
+const char str1300[] PROGMEM = "robbery"; //<--uncommon
+const char str1301[] PROGMEM = "aviation";//<--uncommon
 const char str1302[] PROGMEM = "kettle";const char str1303[] PROGMEM = "gown";
 const char str1304[] PROGMEM = "gospel";const char str1305[] PROGMEM = "hectare";
 const char str1306[] PROGMEM = "hobby"; const char str1307[] PROGMEM = "boxing";
@@ -773,16 +788,20 @@ const char str1329[] PROGMEM = "nephew";
 const char str1330[] PROGMEM = "astonishing";
 const char str1331[] PROGMEM = "bubble";
 const char str1332[] PROGMEM = "ascertain";
-const char str1333[] PROGMEM = "pigeon";
+const char str1333[] PROGMEM = "went";//<--removal: pigeon
 const char str1334[] PROGMEM = "municipal";
 const char str1335[] PROGMEM = "sulphur";
 const char str1336[] PROGMEM = "voyage"; const char str1337[] PROGMEM = "siege";
-const char str1338[] PROGMEM = "eternal";const char str1339[] PROGMEM = "ample";
-const char str1340[] PROGMEM = "lazy";  const char str1341[] PROGMEM = "kidney";
+const char str1338[] PROGMEM = "eternal";
+const char str1339[] PROGMEM = "ample"; //<--realword
+const char str1340[] PROGMEM = "lazy";
+const char str1341[] PROGMEM = "kidney";//<--realword
 const char str1342[] PROGMEM = "pest";   const char str1343[] PROGMEM = "bump";
 const char str1344[] PROGMEM = "athlete";const char str1345[] PROGMEM = "bail";
 const char str1346[] PROGMEM = "abnormal";
 const char str1347[] PROGMEM = "hover";
+//------------four letter start------------------
+//problem
 
 const char * const wordIndex[] PROGMEM= 	   
 {   
@@ -956,10 +975,13 @@ void headsUpSuggest(byte letter, byte place)
   }
   else
   {
-    if(letter == IMPLICIT_SPACE && place < CHECKABLE_CHARS && buff[place])
+    if(letter == IMPLICIT_SPACE)
     {
-      for(byte i = 0; i < place + 1; i++){Keyboard.write(8);}
-      Keyboard.print(buff);//print suggestion
+      if(place < CHECKABLE_CHARS && buff[place])
+      {
+        for(byte i = 0; i < place + 1; i++){Keyboard.write(8);}
+        Keyboard.print(buff);//print suggestion
+      }
       Keyboard.write(32);  //complete word with trailing space
     }
     firstCap = false;
